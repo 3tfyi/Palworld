@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 设置文档类型为HTML，并指定语言为简体中文 -->
+    <meta charset="UTF-8"> <!-- 指定字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置viewport以支持响应式设计 -->
+    <title>Mods数据库</title> <!-- 设置页面标题 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 引入样式表 -->
+    <script src="cookie.js" defer></script> <!-- 引入JavaScript文件，并延迟执行 -->
+</head>
+<body>
+      
+<div class="container-wrapper">
+    <div id="container">
+        <h1>Mods数据库</h1> <!-- 页面标题 -->
+        <div id="language-toggle" class="back-to-top">
+            <button id="toggle-btn">切换语言</button> <!-- 切换语言按钮 -->
+        </div>
+        <input type="text" id="search" placeholder="搜索..."> <!-- 搜索框 -->
+        <div id="category-checkboxes">
+            <!-- 不同类别的复选框 -->
+            <label><input type="checkbox" id="select-all-checkbox"><span class="checkbox-custom"></span><span id="select-all-text"></span></label>
+            <label><span class="category"><input type="checkbox" class="category-checkbox" value="Pals"><span class="checkbox-custom"></span><span class="category-text"></span></span></label>
+            <label><span class="category"><input type="checkbox" class="category-checkbox" value="Gameplay"><span class="checkbox-custom"></span><span class="category-text"></span></span></label>
+            <label><span class="category"><input type="checkbox" class="category-checkbox" value="Miscellaneous"><span class="checkbox-custom"></span><span class="category-text"></span></span></label>
+            <label><span class="category"><input type="checkbox" class="category-checkbox" value="Weapons"><span class="checkbox-custom"></span><span class="category-text"></span></span></label>
+            <label><span class="category"><input type="checkbox" class="category-checkbox" value="User-Interface"><span class="checkbox-custom"></span><span class="category-text"></span></span></label>
+            <label><span class="category"><input type="checkbox" class="category-checkbox" value="Audio"><span class="checkbox-custom"></span><span class="category-text"></span></span></label>
+            <label><span class="category"><input type="checkbox" class="category-checkbox" value="Characters"><span class="checkbox-custom"></span><span class="category-text"></span></span></label>
+            <label><span class="category"><input type="checkbox" class="category-checkbox" value="Utilities"><span class="checkbox-custom"></span><span class="category-text"></span></span></label>
+            <label><span class="category"><input type="checkbox" class="category-checkbox" value="Visuals"><span class="checkbox-custom"></span><span class="category-text"></span></span></label>
+        </div>
+        <div id="mods-list"></div> <!-- 模组列表 -->
+    </div>
+</div>
+<div id="back-to-top">
+    <img src="top.svg" alt="返回顶部" style="width: 50px; height: 50px;"> <!-- 返回顶部按钮 -->
+</div>
+<script src="modsData.js"></script> <!-- 引入模组数据JavaScript文件 -->
+<script src="scripts.js"></script> <!-- 引入自定义脚本文件 -->
+</body>
+
+</html>
