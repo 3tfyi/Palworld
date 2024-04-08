@@ -69,7 +69,7 @@ function searchMods() {
 function displayModal(mod) {
     var sharelink = '';
     var directlink = '';
-    var enjoylink = 'https://www.ilanzou.com/s/1pcdfcad';
+    var enjoylink = 'https://www.ilanzou.com/s/1pckN8A';
     var matchedShareData = shareData.find(data => data.getid === mod.modid);
     if (matchedShareData) {
         sharelink = `https://wwf.lanzouo.com/${matchedShareData.url}`;
