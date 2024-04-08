@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://api.hanximeng.com/ranimg/api.php');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+    word-break: break-all;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.mods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mod {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(254, 254, 254, 0.5);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mod h2 {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.mod p {
+    color: #777;
+    font-size: 16px;
+    margin: 0;
+}
+
+#myModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: white;
+}
+
+.search-container input[type=text]:focus {
+    outline: none;
+    border-color: #719ECE;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 999;
+    transition: transform 0.5s ease-in-out;
+}
+
+.floating-btn:hover {
+    transform: rotate(-180deg);
+}
+
+.floating-btn img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.highlight {
+    background-color: #c8e6c9;
+    border-color: #c8e6c9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.highlight:hover {
+    background-color: rgba(102, 204, 255, 0.5);
+    border-color: rgba(102, 204, 255, 0.4);
+    box-shadow: 0 0 15px rgba(102, 204, 255, 0.3);
+}
