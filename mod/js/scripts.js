@@ -74,9 +74,9 @@ function displayModal(mod) {
     if (matchedShareData) {
         sharelink = `https://wwf.lanzouo.com/${matchedShareData.url}`;
         if (matchedShareData.key) {
-            directlink = `https://api.hanximeng.com/lanzou/?url=https://wwf.lanzouo.com/${matchedShareData.url}&type=down&pwd=${matchedShareData.key}`;
+            directlink = `./lanzou.php?url=${matchedShareData.url}&type=down&pwd=${matchedShareData.key}`;
         } else {
-            directlink = `https://api.hanximeng.com/lanzou/?url=https://wwf.lanzouo.com/${matchedShareData.url}&type=down`;
+            directlink = `./lanzou.php?url=${matchedShareData.url}&type=down`;
         }
     }
     modalContent.innerHTML = `
