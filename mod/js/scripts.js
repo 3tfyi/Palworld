@@ -74,9 +74,9 @@ function displayModal(mod) {
     if (matchedShareData) {
         sharelink = `https://wwf.lanzouo.com/${matchedShareData.url}`;
         if (matchedShareData.key) {
-            directlink = `./lanzou.php?url=${matchedShareData.url}&type=down&pwd=${matchedShareData.key}`;
+            directlink = `https://link.niganma.top/other/lz/lanzou.php?url=${matchedShareData.url}&type=down&pwd=${matchedShareData.key}`;
         } else {
-            directlink = `./lanzou.php?url=${matchedShareData.url}&type=down`;
+            directlink = `https://link.niganma.top/other/lz/lanzou.php?url=${matchedShareData.url}&type=down`;
         }
     }
     modalContent.innerHTML = `
