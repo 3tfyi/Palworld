@@ -93,7 +93,7 @@ function displayModal(mod) {
         ${matchedShareData ? `<p><strong>蓝奏云优享版下载：</strong><a href="${enjoylink}" target="_blank">点击下载</a></p>` : ''}
         <p><strong>下载UE4SS：</strong><a href="https://github.com/UE4SS-RE/RE-UE4SS/releases" target="_blank">点击下载</a></p>
         <p><strong>Nexus Mods发布页：</strong><a href="https://www.nexusmods.com/palworld/mods/${mod.modid}" target="_blank">https://www.nexusmods.com/palworld/mods/${mod.modid}</a></p>
-        <p><strong>Vortex 三件套：</strong><a href="https://www.nexusmods.com/palworld/mods/${mod.modid}/comments" target="_blank">https://www.nexusmods.com/palworld/mods/${mod.modid}/comments</a></p>
+        <p><strong>Vortex 三件套：</strong><a href="https://www.ilanzou.com/s/ZtKkfQF" target="_blank">https://www.ilanzou.com/s/ZtKkfQF</a></p>
     `;
     modal.style.display = "block";
     body.style.overflow = 'hidden';
